@@ -14,6 +14,7 @@ manipulator = StringManipulator()
 manipulator.getString()
 manipulator.printString()
 
+
 # Task 2:
 class Shape:
     def __init__(self):
@@ -55,7 +56,7 @@ class Point:
         self.y=y
 
     def show(self):
-        print(f"coordinates {self.x},({self.y})")
+        print(f"coordinates {self.x},{self.y}")
 
     def move(self, dx,dy):
         self.x+=dx
@@ -65,7 +66,7 @@ class Point:
         return ((self.x-general.x)**2 + (self.y-general.y)**2)**0.5
 
 # Print Task 4:
-point1 = Point(2,3)
+point1 = Point(1,3)
 point1.show()
 
 # Task 5:

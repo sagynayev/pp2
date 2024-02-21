@@ -7,3 +7,4 @@ x=int(x)
 #task 3
 x=5
 x=complex(x)
+print(x)

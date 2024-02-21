@@ -89,4 +89,4 @@ def averageIMDBscores(movies):
 def averageIMDBscores_by_category(movies, category):
     category_movies = filterMoviesCategory(movies, category)
     return averageIMDBscores(category_movies)
-print(averageIMDBscores_by_category(movies, "Romance"))
+print(averageIMDBscores_by_category(movies, "Thriller"))

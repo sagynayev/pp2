@@ -1,3 +1,4 @@
+import random
 # Dictionary of movies
 movies = [
 {
@@ -79,4 +80,4 @@ movies = [
 def imdb_5_5(movie):
     return movie["imdb"] > 5.5
 
-print(imdb_5_5(movies[0]))
+print(imdb_5_5(movies[13])) #random.randint(0,15)

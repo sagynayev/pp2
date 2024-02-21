@@ -80,4 +80,4 @@ movies = [
 
 def filterMoviesCategory(movies, category):
     return [movie for movie in movies if movie["category"] == category]
-print(filterMoviesCategory(movies, "Romance"))
+print(filterMoviesCategory(movies, "Thriller"))

@@ -4,8 +4,8 @@ def solve(numheads, numlegs):
         if (2 * chickens + 4 * rabbits) == numlegs:
             return chickens, rabbits
 
-numheads = int(input("heads: "))
-numlegs = int(input("legs: "))
+numheads = int(input("heads: 35 "))
+numlegs = int(input("legs: 94 "))
 
 chickens, rabbits = solve(numheads, numlegs)
 
