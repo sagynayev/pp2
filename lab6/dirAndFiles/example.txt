@@ -1,0 +1,4 @@
+Box A contains 3 white and 4 black balls, whereas box B contains 2 white and 1 black balls.
+A ball is drawn at random from the box A and put in the box B. Another ball is then drawn
+from the box B. It happens to be black. What is the probability that the ball transferred was
+white?
