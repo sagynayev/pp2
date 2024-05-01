@@ -3,7 +3,7 @@ import csv
 import pandas as pd
 from tabulate import tabulate 
 
-conn = psycopg2.connect(host="localhost", dbname="postgresql", user="postgres", password="multik123", port=5432)
+conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="multik123", port=5432)
 
 cur = conn.cursor()
 
@@ -67,13 +67,12 @@ while check:
                 filepath = input("Enter a file path with proper extension: ")
                 with open(str(filepath), 'r') as f:
                 # Skip the header row.
-                    reader = csv.reader(f)
+                    reader = csv.reader(f, delimiter=';')
                     next(reader)
                     for row in reader:
                         cur.execute("INSERT INTO phonebook (name, surname, phone) VALUES (%s, %s, %s)", (row[0], row[1], row[2]))
                 conn.commit()
-
-                    
+            
                 back_com = str(input('Type "back" in order to return to the list of the commands: '))
                 if back_com == "back":
                     back = True
